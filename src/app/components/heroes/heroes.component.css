@@ -1,0 +1,33 @@
+
+.wrapper {
+  display: flex;
+  margin-top: 1rem;
+  background: #dbdbdb;
+  width: 20rem;
+  padding: auto 0.7rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  box-shadow: 0.005rem 0 0.3rem rgba(0, 0, 0, 0.356) ;
+  cursor: pointer;
+}
+
+.wrapper:hover {
+  filter: brightness(0.9);
+  top: .1em;
+  transition: filter 0.8s, top 1s;
+}
+
+.heroId {
+  background: #369;
+  border-radius: 0.3rem 0 0 0.3rem;
+  width: 3rem;
+  color: #FFF;
+  padding: 0.7rem;
+}
+
+.heroName{
+  display: flex;
+  align-items: center;
+  margin-left: 0.7rem;
+  color: rgb(23, 43, 77);
+}

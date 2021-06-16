@@ -1,0 +1,14 @@
+<h2>Detalhes</h2>
+<div class="wrapper">
+  <h3 class="heroId">{{hero.id}}</h3>
+  <h3 class="heroName">{{hero.name | uppercase}} </h3>
+</div>
+
+<div>
+  <label for="name">Hero name: </label>
+  <input 
+    id="name"
+    [(ngModel)]="hero.name" 
+    placeholder="Digite seu herói"
+  >
+</div>

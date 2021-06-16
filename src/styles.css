@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.content {
+  padding: 0 1rem;
+}
+
+header {
+  padding: 3rem ;
+  background: #369;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+nav {
+  background: rgb(48, 93, 138);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+a {
+  color: #369;
+  background: #FFF; 
+  width: 7rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 2rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  background: rgb(219, 219, 219);
+  transition: background 0.8s;
+}
+
