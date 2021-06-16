@@ -22,6 +22,8 @@ header {
   align-items: center;
 }
 
+
+
 h1 {
   color: #fff;
 }
@@ -37,7 +39,7 @@ nav {
 
 a {
   color: #369;
-  background: #FFF; 
+  background: #FFF;
   width: 7rem;
   padding: 0.5rem;
   border: none;

@@ -1,14 +1,17 @@
 <h2>Detalhes</h2>
+
 <div class="wrapper">
-  <h3 class="heroId">{{hero.id}}</h3>
-  <h3 class="heroName">{{hero.name | uppercase}} </h3>
+  <li class="list-heroes" *ngFor="let hero of heroes">
+    <span class="heroId">{{hero.id}}</span>
+    <span class="heroName">{{hero.name | uppercase}} </span>
+  </li>
 </div>
 
 <div>
   <label for="name">Hero name: </label>
-  <input 
+  <input
     id="name"
-    [(ngModel)]="hero.name" 
+
     placeholder="Digite seu herói"
   >
 </div>

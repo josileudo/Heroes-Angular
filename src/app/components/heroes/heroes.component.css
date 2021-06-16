@@ -1,5 +1,27 @@
 
 .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media(max-width: 1400px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width: 1020px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 679px) {
+  .wrapper {
+    grid-template-columns: 1fr ;
+  }
+}
+
+.list-heroes {
   display: flex;
   margin-top: 1rem;
   background: #dbdbdb;
@@ -11,7 +33,7 @@
   cursor: pointer;
 }
 
-.wrapper:hover {
+.list-heroes:hover {
   filter: brightness(0.9);
   top: .1em;
   transition: filter 0.8s, top 1s;
