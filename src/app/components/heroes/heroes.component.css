@@ -3,29 +3,32 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+  max-width: 58rem;
+  margin: 0 auto;
 }
 
-@media(max-width: 1400px) {
+@media(max-width: 1300px) {
   .wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media(max-width: 1020px) {
+@media(max-width: 860px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media(max-width: 679px) {
+@media(max-width: 580px) {
   .wrapper {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
   }
+
 }
 
 .list-heroes {
   display: flex;
   margin-top: 1rem;
   background: #dbdbdb;
-  width: 20rem;
+  width: 100%;
   padding: auto 0.7rem;
   border-radius: 0.3rem;
   text-align: center;
@@ -52,4 +55,8 @@
   align-items: center;
   margin-left: 0.7rem;
   color: rgb(23, 43, 77);
+}
+
+.selected {
+  background: rgb(160, 160, 160);
 }
