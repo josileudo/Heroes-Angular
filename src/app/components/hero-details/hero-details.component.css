@@ -1,0 +1,23 @@
+.hero-details {
+  padding: 4rem;
+  width: 30rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0.005rem 0.03rem .5rem rgba(0, 0, 0, 0.514);
+}
+
+.details {
+  text-align: center;
+  color: rgb(33, 65, 97);
+  font-size:1.3rem;
+  margin-bottom: 2rem;
+}
+
+.input-edit {
+  border: 0.3px solid rgba(134, 134, 134, 0.308);;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: rgb(33,65,97);
+  font-size: 1rem;
+  box-shadow: 0.005rem 0.003rem .5rem rgba(29, 49, 138, 0.1);
+}

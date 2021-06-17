@@ -1,29 +1,19 @@
-<h2>Detalhes</h2>
-<div class="wrapper">
+<h2 class="title">Meus Heróis</h2>
+
+<div class="heroes">
   <li
     class="list-heroes"
     *ngFor="let hero of heroes"
     (click)="onSelect(hero)"
     [class.selected] = "hero === selectedHero"
   >
-  <span class="heroId">{{hero.id}}</span>
-  <span class="heroName">{{hero.name | uppercase}} </span>
-</li>
+    <span class="heroId">{{hero.id}}</span>
+    <span class="heroName">{{hero.name | uppercase}} </span>
+  </li>
 </div>
 
-<div *ngIf="selectedHero">
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
-  <div>
-    <span>Id:</span>
-    <span>{{selectedHero.id}}</span>
-  </div>
+<app-hero-details
+  [hero] = "selectedHero"
+  >
+</app-hero-details>
 
-  <div>
-    <label for="name">Hero name: </label>
-    <input
-      id="name"
-      placeholder="Digite seu herói"
-      [(ngModel)]= "selectedHero.name"
-    >
-  </div>
-</div>
