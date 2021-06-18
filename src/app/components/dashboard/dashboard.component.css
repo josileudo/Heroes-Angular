@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+svg {
+  height: 4.4rem;
+  margin-bottom: 1rem;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(32, 66, 100);
+}
+
+.heroes-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+a {
+  background: #369;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+a:hover {
+  background: rgb(54, 109, 163);
+  transition: background 0.2s
+}

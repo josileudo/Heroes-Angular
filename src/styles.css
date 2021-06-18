@@ -22,21 +22,24 @@ header {
   align-items: center;
 }
 
-
 h1 {
   color: #fff;
 }
 
-nav {
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav {
   background: rgb(48, 93, 138);
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-a {
+.menu-links {
   color: #369;
   background: #FFF;
   width: 7rem;
@@ -47,10 +50,15 @@ a {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-a:hover {
+.menu-links:hover {
   background: rgb(219, 219, 219);
   transition: background 0.8s;
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,3 +1,19 @@
+button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+  background: #369;
+  color: #FFF;
+  width: 4rem;
+}
+
+button:hover{
+  filter: brightness(0.9);
+  transition: filter 0.3s;
+}
+
 .hero-details {
   padding: 4rem;
   width: 30rem;

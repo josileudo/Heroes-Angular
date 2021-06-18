@@ -2,13 +2,13 @@
   <h1>{{title}}</h1>
 </header>
 
-<nav>
-  <a href="/"> Dashboard</a>
-  <a href="/"> Heroes</a>
+<nav class = "nav">
+  <a class= "menu-links" routerLink="/dashboard"> Dashboard</a>
+  <a class= "menu-links" routerLink="/heroes"> Heroes</a>
 </nav>
 
 <div class="content">
-  <app-heroes></app-heroes>
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 </div>
 
