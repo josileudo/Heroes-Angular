@@ -59,6 +59,23 @@ a {
   transition: background 0.8s;
 }
 
+html, body {
+  height: 100%;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%
+  }
+}
+
+@media (min-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
