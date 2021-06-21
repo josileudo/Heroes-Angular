@@ -1,5 +1,18 @@
 <h2 class="title">Meus Heróis</h2>
 
+<div>
+  <label for = "new-hero">Nome do Herói: </label >
+  <input id = "new-hero" #heroName/>
+</div>
+
+<button
+  class = "add-button"
+  (click)="add(heroName.value);
+  heroName.value = ''">
+
+  Adicionar Herói
+</button>
+
 <div class="heroes">
   <li
     class="list-heroes"
